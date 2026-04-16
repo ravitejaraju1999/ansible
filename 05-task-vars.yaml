@@ -2,7 +2,7 @@
   hosts: local
   connection: local #ansible is connecting to local host
   vars:
-    course: ansible
+    course: devops with aws
     duration: 10hrs
     trainer: raviteja
   tasks:
