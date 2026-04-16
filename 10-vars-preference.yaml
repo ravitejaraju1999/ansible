@@ -1,12 +1,14 @@
 - name: vars-preference
   hosts: local
   connection: local
+  vars:
+    name: from play level
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: name
-    prompt: what is your name?
-    private: false
+  # vars_prompt:
+  # - name: name
+  #   prompt: what is your name?
+  #   private: false
   tasks:
   - name: testing variables preference
     # vars:
@@ -18,4 +20,5 @@
 
 # 1.first preference is args and command line
 #2. from task level is second preference
-#3. from files level is second preference
+#3. from files level is third preference
+#4 from prompt level is fourth preference
