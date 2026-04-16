@@ -1,8 +1,8 @@
 - name: vars-preference
   hosts: local
   connection: local
-  vars:
-    name: from play level
+  # vars:
+  #   name: from play level
   # vars_files:
   # - course.yaml
   # vars_prompt:
@@ -22,3 +22,5 @@
 #2. from task level is second preference
 #3. from files level is third preference
 #4 from prompt level is fourth preference
+#5 from play level is fifth preference
+
