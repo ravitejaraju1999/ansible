@@ -1,0 +1,12 @@
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      msg: "hello {{ item }} " # item is a reserved keyword
+    loop:
+    - ramesh
+    - suresh
+    - raheem
+    - john
