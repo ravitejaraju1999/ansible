@@ -9,5 +9,5 @@
       state: latest # item is a reserved keyword
     loop:
     - nginx
-    - mysql
+    - mysql-server
     - zip
