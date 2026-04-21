@@ -3,6 +3,7 @@
   connection: local
   vars:
     technologies: devops,linux,shell,ansible #STRING
+    lower_string: raviteja
     tags:
       Application: payment
       Envinornment: dev
@@ -42,4 +43,8 @@
       dest: ./student-data.json
       content: "{{ student_yaml | to_nice_json }}"
 
-      
+  - name: converting lower to upper
+    ansible.builtin.debug:
+      msg: "{{ lower_string  | upper}}"
+    
+
