@@ -5,6 +5,7 @@
     technologies: devops,linux,shell,ansible #STRING
     lower_string: raviteja
     upper_string: RAVITEJARAJU1999@GMAIL.COM
+    ip: 100.53.214.38
     tags:
       Application: payment
       Envinornment: dev
@@ -50,5 +51,8 @@
 
   - name: converting UPPER to lower
     ansible.builtin.debug:
-      msg: "{{ upper_string  | lower}}"   
+      msg: "{{ upper_string  | lower}}" 
 
+  - name: check IP is valid or not
+    ansible.builtin.debug: 
+      msg: "{{ ip | ansible.utils.ipv4 }}"
