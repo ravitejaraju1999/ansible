@@ -31,5 +31,5 @@
 
   - name: read yaml and take it into variable
     ansible.builtin.set_fact:
-      student_yaml: "{{ lookup('file','student.yaml') | from_yaml}}"
+      student_yaml: "{{ lookup('file','00-student.yaml') | from_yaml}}"
       msg: "{{ student_yaml }}"
